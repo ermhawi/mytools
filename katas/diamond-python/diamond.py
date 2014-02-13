@@ -6,4 +6,4 @@ def printDiamond(stop):
     full = string.ascii_uppercase[idx:1:-1] + string.ascii_uppercase[0:idx+1]  
     print full
 
-printDiamond('E')
+printDiamond('F')
