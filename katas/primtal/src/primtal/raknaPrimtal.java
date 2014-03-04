@@ -1,5 +1,6 @@
 package primtal;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class raknaPrimtal {
@@ -8,7 +9,7 @@ public class raknaPrimtal {
 	
 	public static void main(String[] args) {
 		int start = 2;
-		int stop = 1000;
+		int stop = 30;
 		int[] result = calculatePrimes(start, stop);
 		System.out.println(Arrays.toString(result));
 		
@@ -16,7 +17,28 @@ public class raknaPrimtal {
 	}
 
 	private static int[] calculatePrimes(int start, int stop) {
-		int[] result = { 2,3,6 };
+	   int resultsize = 100;
+		int[] result = new int[resultsize];
+		int index=0;
+		int prime;
+		
+		// Start with 2
+		result[index++] = 2;
+		
+		for (int i=start; i<stop; i++)
+		{
+		   // find prime
+		   prime = 7;
+		   
+		   // add to array
+		   if(index == resultsize)
+		   {
+		      resultsize += 100;
+		      result = Arrays.copyOf(result, resultsize);
+		   } 
+		   result[index++] = prime;
+		}
+		
 		return result;
 	}
 	
