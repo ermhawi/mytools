@@ -2,6 +2,24 @@ mytools
 =======
 
 ```
+$ time katas/primtal/src/prime1.groovy 1000000
+999907,999917,999931,999953,999959,999961,999979,999983,
+real	0m0.750s
+user	0m1.079s
+sys	0m0.047s
+
+$ time katas/primtal/src/prime1.groovy 10000000
+9999901,9999907,9999929,9999931,9999937,9999943,9999971,9999973,9999991,
+real	0m1.841s
+user	0m2.123s
+sys	0m0.143s
+
+$ time katas/primtal/src/prime1.groovy 100000000
+99999931,99999941,99999959,99999971,99999989,
+real	0m13.317s
+user	0m13.578s
+sys	0m0.341s
+
 $ time katas/primtal/src/prime1.groovy 1000000000
 999999929,999999937,
 real	2m27.719s
