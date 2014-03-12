@@ -10,10 +10,8 @@ def sievePrimes = { bound ->
         }
     }
     (bound-100..<bound).each { 
-    		     if (isPrime[it]) {
-		     	print it + ","
-    		     }
-     }
+        if (isPrime[it]) { print it + "," }
+    }
 }
 
 sievePrimes(args[0].toInteger())
