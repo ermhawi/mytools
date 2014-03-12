@@ -9,8 +9,11 @@ def sievePrimes = { bound ->
             ((pc**2)..<bound).step(pc) { isPrime[it] = false }
         }
     }
-    (0..<bound).findAll { isPrime[it] }
+    (bound-100..<bound).each { 
+    		     if (isPrime[it]) {
+		     	print it + ","
+    		     }
+     }
 }
 
-
-println sievePrimes(args[0].toInteger())
+sievePrimes(args[0].toInteger())
