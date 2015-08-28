@@ -4,17 +4,13 @@ FILE=$1
 ABSFILE=`readlink --canonicalize $FILE`
 BASEDIR=$(dirname `readlink --canonicalize $0`)/`hostname`
 
-echo -n "BEFORE  : " 
+echo -n "ORIGIN  : " 
 ls -la $ABSFILE
 
-mkdir -p $BASEDIR
-cp -p --parents $ABSFILE $BASEDIR
+mkdir -p $(dirname $BASEDIR$ABSFILE)
+#cp -p --parents $ABSFILE $BASEDIR
+ln $ABSFILE $BASEDIR$ABSFILE
 
-echo -n "COPY    : "
+echo -n "BACKUP  : "
 ls -la $BASEDIR$ABSFILE
 
-rm $ABSFILE
-ln -s $BASEDIR$ABSFILE $ABSFILE
-
-echo -n "AFTER   : "
-ls -la $ABSFILE
