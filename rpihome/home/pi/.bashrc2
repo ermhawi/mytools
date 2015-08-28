@@ -1,0 +1,8 @@
+export HISTIGNORE="&"
+export HISTCONTROL=ignorespace:erasedups
+export HISTFILESIZE=100000000
+export HISTSIZE=100000
+export PROMPT_COMMAND='history -a'
+# --- git branch prompt
+export PS1='+---\[\e]0;\h \w\a\]\n\[\e[34m\]\u@\h ${CSENV} \[\]\[\e[34m\]\[\e[0m\]\[\033[35m\e[0m\]\n\[\e[31m\]\w\[\e[0m\]\n\$ '
+
