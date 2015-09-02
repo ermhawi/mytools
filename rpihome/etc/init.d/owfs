@@ -1,0 +1,27 @@
+#!/bin/bash
+
+### BEGIN INIT INFO
+# Provides:                     owfs
+# Required-Start:               $local_fs
+# X-UnitedLinux-Should-Start:
+# Required-Stop:                $local_fs
+# X-UnitedLinux-Should-Stop:
+# Default-Start:                2 3 4 5
+# Default-Stop:                 0 1 6
+# Short-Description:            owfs
+# Description:                  owfs
+### END INIT INFO
+
+case "$1" in
+  start)
+        /usr/bin/owfs --pid-file /var/run/owfs/owfs.pid
+        ;;
+  stop)
+        killall owfs
+        ;;
+  *)
+        echo "Usage: $N {start|stop}" >&2
+        exit 1
+        ;;
+esac
+exit 0

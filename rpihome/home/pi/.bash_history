@@ -1405,3 +1405,113 @@ mytools-checklinks.sh
 git add .
 cd
 cd mytools/
+git add .
+git status
+git commit -m "update of mytools"
+git push
+mytools-add.sh /etc/owfs.conf
+emacs mytools/mytools-add.sh 
+cd
+ls
+r m1
+rm 1
+more foo 
+history
+mytools-add.sh nodejs/temperature/app.js
+mytools-checklinks.sh 
+bash
+ls
+mytools-checklinks.sh 
+cd /var/www/
+ls
+more jqplot.html
+wget http://127.0.0.1:8081/listUsers
+ls
+cd ~/nodejs/temperature/
+ls
+nodemon --debug app.js
+netstat -lptn
+ps -ef | grep node
+netstat -naptu
+sudo netstat -naptu
+more /etc/rc.local 
+sudo service --status-all | grep dhcp
+sudo service --status-all | grep node
+ls -ltr /etc/init.d/
+more /etc/init.d/nodejs
+mytools-add.sh /etc/init.d/nodejs
+more /etc/init.d/owfs
+mytools-add.sh /etc/init.d/owfs
+tail -F /var/log/temperature.log 
+node --version
+which node
+sudo /etc/init.d/nodejs status
+unset DISPLAY
+sudo emacs/etc/init.d/nodejs
+sudo emacs /etc/init.d/nodejs
+sudo /etc/init.d/nodejs restart
+tail -F /var/log/temperature.log 
+ps -ef | grep node
+tail -F /var/log/temperature.log 
+sudo emacs /etc/init.d/nodejs
+sudo /etc/init.d/nodejs restart
+tail -F /var/log/temperature.log 
+ps -ef | grep node
+sudo /etc/init.d/nodejs stop
+ps -ef | grep node
+sudo /etc/init.d/nodejs start
+ps -ef | grep node
+tail -F /var/log/temperature.log 
+ls -la
+ls -la ~/bin
+mytools-checklinks.sh 
+bash -x mytools-checklinks.sh 
+cd
+bash -x mytools-checklinks.sh 
+pwd
+ls
+cd mytools/
+ls
+cd rpihome/
+ls
+cd etc/
+ls
+cd init.d/
+ls
+ls -la
+ls -la /etc/init.d/nodejs
+ls -lai /etc/init.d/nodejs
+ls -lai
+mkdir temp
+cd temp/
+ls
+touch one
+touch two
+ls
+ls -lai
+ln three one
+ln one three
+ls -lai
+echo "test" >> one
+ls -lai
+mv nodejs nodejs.old
+mytools-add.sh /etc/init.d/nodejs
+ls -lai
+ls -lai /etc/init.d/nodejs
+ls -la nodejs
+sudo emacs /etc/init.d/nodejs
+ls -la nodejs
+ls -lai /etc/init.d/nodejs
+ls -la nodejs
+emacs /home/pi/.emacs
+mytools-add.sh ~/.emacs
+sudo su - 
+mytools-add.sh /root/.emacs
+ls -la /root/
+ls -la
+rm nodejs.old 
+ls -la
+sudo emacs /etc/init.d/nodejs
+ls -la
+cd ..
+git status
