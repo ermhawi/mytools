@@ -1,9 +1,35 @@
 var express = require('express');
 var app = express();
-app.use(express.bodyParser());
 var fs = require('fs'); 
 var execSync = require('child_process').execSync;
 
+// 
+// Allow cross domain
+//
+function allowCrossDomain(req, res, next) {
+    // Website you wish to allow to connect
+    res.setHeader('Access-Control-Allow-Origin', '*');
+
+    // Request methods you wish to allow
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+
+    // Request headers you wish to allow
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+    // Set to true if you need the website to include cookies in the requests sent
+    // to the API (e.g. in case you use sessions)
+    res.setHeader('Access-Control-Allow-Credentials', true);
+
+    // Pass to next layer of middleware
+    next();
+}
+
+
+app.configure(function () {
+  app.use(express.logger());
+  app.use(express.bodyParser());
+  app.use(allowCrossDomain);
+});
 
 
 app.get('/script/:id', function (req, res) {
@@ -17,7 +43,6 @@ app.get('/script/:id', function (req, res) {
 				out = out.trim();
 				return out;
 			};
-
 			result[req.params.id] = temp();
 		}
 	} catch (e) {

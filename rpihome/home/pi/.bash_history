@@ -1515,3 +1515,68 @@ sudo emacs /etc/init.d/nodejs
 ls -la
 cd ..
 git status
+git add .
+git status
+git commit -m "update of mytools"
+git push
+cd ..
+rm -rf temp
+bash
+rrdtool graph foo DEF:hit=/var/www/cacti/rra/count_elforbrukning_12.rrd:count_elforbrukning:AVERAGE VDEF:vtotal=hit,TOTAL PRINT:vtotal:%lf -s `date --date="Aug 8 01:05:00 BST 2015" +%s` -e `date --date="Aug 8 01:10:00 BST 2015" +%s`
+cd
+ls
+cd bin
+ls
+elforbrukning_day.sh
+touch elforbrukning_day.sh
+rm elforbrukning_day.sh 
+cp count_elforbrukning.sh elforbrukning_day.sh
+date
+date -d "-1 day"
+date -d "-1 day" -s
+date -d "-1 day" +%s
+ls -ltr
+./elforbrukning_day.sh 
+date -d "ons  2 sep 2015 14:56:14 CEST -7 day"
+date -d "ons  2 sep 2015 14:56:14 CEST"
+date -d "`date`"
+date -d "`LC_TIME=C date`"
+./elforbrukning_day.sh 
+X="test" + "test"
+X="test" "test"
+echo $X
+./elforbrukning_day.sh 
+rrdtool graph foo DEF:hit=/var/www/cacti/rra/count_elforbrukning_12.rrd:count_elforbrukni]g:AVERAGE VDEF:vtotal=hit,TOTAL PRINT:vtotal:%lf -s 1441113475 -e 1441199875
+rrdtool graph foo DEF:hit=/var/www/cacti/rra/count_elforbrukning_12.rrd:count_elforbrukning:AVERAGE VDEF:vtotal=hit,TOTAL PRINT:vtotal:%lf -s 1441113475 -e 1441199875
+rrdtool graph foo DEF:hit=/var/www/cacti/rra/count_elforbrukning_12.rrd:count_elforbrukning:AVERAGE VDEF:vtotal=hit,TOTAL PRINT:vtotal:%lf -s 1441113475 -e 1441199875 | tail -1
+./elforbrukning_day.sh 
+bash -x ./elforbrukning_day.sh 
+./elforbrukning_day.sh 
+bash -x ./elforbrukning_day.sh 
+cd /var/www
+ls
+sudo touch jsontest.html
+sudo chmod 777 jsontest.html
+tail -F /var/log/temperature.log 
+sudo touch jqplot-example1.html
+sudo chmod 777 jqplot-example1.html
+more /etc/apache2/sites-available/default
+mytools-add.sh /etc/apache2/sites-available/default
+ls -la
+mytools-checklinks.sh 
+git status /home/pi/bin/count_elforbrukning.sh
+git status /home/pi/mytools/rpihome/home/pi/bin/count_elforbrukning.sh
+cd /home/pi/mytools/rpihome && git status home/pi/bin/count_elforbrukning.sh
+cd /home/pi/mytools/rpihome && git diff home/pi/bin/count_elforbrukning.sh
+cd /home/pi/mytools/rpihome && git status home/pi/.bash_history
+cd /home/pi/mytools/rpihome && git status home/pi/.bashrc
+cd /home/pi/mytools/rpihome && git diff home/pi/.bashrc
+cd /home/pi/mytools/rpihome && git diff home/pi/.bash_history
+cd /home/pi/mytools/rpihome && git diff --quite home/pi/.bash_history
+cd /home/pi/mytools/rpihome && git diff --quiet home/pi/.bash_history
+cd /home/pi/mytools/rpihome && git diff --quiet home/pi/.bashrc
+unset DISPLAY
+cd ..
+emacs mytools-checklinks.sh
+mytools-checklinks.sh 
+git status 
