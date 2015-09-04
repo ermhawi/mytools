@@ -16,7 +16,7 @@ for path in $(find $BASEDIR -type f| sort); do
 		echo -n "ok"
     else
 		echo "ERROR, restoring: [ln $FILE2 $FILE1]"
-		rm $FILE1 2&>1 >>/dev/null
+		mv $FILE1 $FILE1.org
 		ln $FILE2 $FILE1
     fi    
 	cd $BASEDIR
