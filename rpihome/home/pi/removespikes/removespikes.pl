@@ -13,7 +13,7 @@ require "getopts.pl";
 
 my (@dump,%exp,@cols,@dbak,%tot,%por);
 my ($linea,$linbak,$lino,$cdo,$tresto,$tstamp,$a,$b,$cont);
-my $DEBUG = 0;
+my $DEBUG = 1;
 
 # Limit % for cutting. Any peak representing less than this % will be cut
 my $LIMIT=0.6; # obs this is really %, so 0.6 means 0.6% (and not 0.006%!)

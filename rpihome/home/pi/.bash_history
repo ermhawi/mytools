@@ -1580,3 +1580,303 @@ cd ..
 emacs mytools-checklinks.sh
 mytools-checklinks.sh 
 git status 
+git add .
+git status 
+git commit -m "update of mytools"
+git push
+cd /var/www
+ls
+sud su -
+sudo su -
+cd ~
+elforbrukning_day.sh
+bash -x ./elforbrukning_day.sh 
+bash -x elforbrukning_day.sh 
+date -d "ons  2 sep 2015 14:56:14 CEST"
+date -d "`LC_TIME=C date`"
+date -d "`LC_TIME=C date`" +%s
+CURRDATE=`LC_TIME=C date`
+TSTART=`LC_TIME=C date -d "$CURRDATE -$(($i+1)) day"`
+echo $TSTART 
+START=`date -d "$TSTART" +%s`
+echo $START 
+man date
+START=`date -d "$TSTART" "+%s"`
+echo $START 
+bash -x elforbrukning_day.sh 
+echo $START 
+bash -x elforbrukning_day.sh 
+date -d "$TSTART" +%s | tr "\r" " "
+date -d "$TSTART" +%s | tr "\r" " " | od -c
+date -d "$TSTART" +%s | tr "\n" " " | od -c
+date -d "$TSTART" +%s | tr "\n" "" | od -c
+bash -x elforbrukning_day.sh 
+LC_TIME=C date -d "$CURRDATE -$(($i+1)) day" | xargs
+LC_TIME=C date -d "$CURRDATE -$(($i+1)) day" | xargs | od -c
+bash -x elforbrukning_day.sh 
+LC_TIME=C date -d "$CURRDATE -$(($i+1)) day" | tr "\n" " "
+bash -x elforbrukning_day.sh 
+date -d 'Thu Sep  3 16:11:30 CEST 2015  -7 day'
+date -d 'Thu Sep  3 16:11:30 CEST 2015  -7 day' | tr "\n" " "
+date -d 'Thu Sep  3 16:11:30 CEST 2015  -7 day' | tr "\n" " " | od -c
+bash -x elforbrukning_day.sh 
+LC_TIME=C date -d "$CURRDATE -$(($i+1)) day" | tr "\n" " "
+LC_TIME=C date -d "$CURRDATE -$(($i+1)) day" | tr "\n" " " | od -c
+bash -x elforbrukning_day.sh 
+cd bin
+ls
+touch elforbrukning_day.pl
+ls -la
+chmod 755 elforbrukning_day.pl
+elforbrukning_day.pl
+perl
+elforbrukning_day.pl
+sudo cpan -i TEST::DateTime
+mencoder mf://*.jpg -mf w=640:h=480:fps=16:type=jpg -ovc copy -oac copy -o output.avi
+ls
+emacs bin/elforbrukning_day.pl
+bg
+bin/elforbrukning_day.pl
+emacs bin/elforbrukning_day.pl &
+cd bin
+elforbrukning_day.sh
+rrdtool graph foo DEF:hit=/var/www/cacti/rra/count_elforbrukning_12.rrd:count_elforbrukning:AVERAGE VDEF:vtotal=hit,TOTAL PRINT:vtotal:%lf -s 1441395610 -e 1441482010
+rrdtool graph foo DEF:hit=/var/www/cacti/rra/count_elforbrukning_12.rrd:count_elforbrukning:AVERAGE VDEF:vtotal=hit,TOTAL PRINT:vtotal:%lf -s 1441395610 -e 1441482010| tail -1
+elforbrukning_day.sh
+rrdtool graph foo DEF:hit=/var/www/cacti/rra/count_elforbrukning_12.rrd:count_elforbrukning:AVERAGE VDEF:vtotal=hit,TOTAL PRINT:vtotal:%lf -s 1441395718 -e 1441482118 | tail -1
+bash -x elforbrukning_day.sh 
+elforbrukning_day.sh
+echo "0x0
+4294062438.163334"
+echo "0x0
+4294062438.163334" | expr match "$TEMP" '.*\\n\(.*\)'`
+TEMP="0x0
+> 4294062438.163334"
+echo "0x0
+4294062438.163334"
+echo $TEMP
+TEMP="0x0
+4294062438.163334"
+TEMP='0x0
+4294062438.163334'
+echo $TEMP
+TEMP="0x0
+4294062438.163334"
+echo $TEMP
+TEMP="0x0
+4294062438.163334"
+echo $TEMP
+elforbrukning_day.sh
+TEMP=`echo -e "0x0\n 4294062438.163334"
+TEMP=`echo -e "0x0\n 4294062438.163334"`
+echo $TEMP
+echo $TEMP | od -c
+TEMP="0x0$'\n' 4294062438.163334"
+echo $TEMP | od -c
+TEMP="0x0"$'\n'" 4294062438.163334"
+echo $TEMP | od -c
+TEMP=`echo $'0x0\n 4294062438.163334'`
+echo $TEMP | od -c
+echo $'0x0\n 4294062438.163334'
+TEMP=${0x0\n 4294062438.163334}
+TEMP=${0x0\\n 4294062438.163334}
+TEMP=${0x0/\\n 4294062438.163334}
+TEMP=$'0x0\\n 4294062438.163334'
+echo $TEMP 
+TEMP=$'0x0\n 4294062438.163334'
+echo $TEMP 
+echo $'0x0\n 4294062438.163334'
+echo "$TEMP" 
+echo $TEMP
+echo "$TEMP" | od -c
+expr match "$TEMP" '.*\n\(.*\)'
+expr match "$TEMP" '\(.*\)'
+expr match "$TEMP" '.* \(.*\)'
+expr match "$TEMP" '.* \(.*\.\)'
+expr match "$TEMP" '.* \(.*\)\.'
+elforbrukning_day.sh
+bash
+unset DISPLAY
+ping rpihusvagn.ermhawi.com
+elforbrukning_day.sh
+ping rpihusvagn.ermhawi.com
+elforbrukning_day.sh
+TEMP=$'0x0\n 4294062438.163334'
+echo "$TEMP" | od -c
+echo "$TEMP" | perl -pe 's/.*?\n(.*)\..*/\1/'
+echo "$TEMP" | perl -pe 's/.*?\n(.*)/\1/'
+echo "$TEMP" | perl -pe 's/.*?\n(.*).*/\1/'
+echo "$TEMP" | perl -pe 's/.*?\n(.*)/\1/'
+echo "$TEMP" | perl -pe "s/.*?\n(.*)/\1/"
+echo "$TEMP" | perl -pe "s/(.*)/\1/"
+echo "$TEMP" | perl -pe "s/0x0(.*)/\1/"
+echo "$TEMP" | perl -pe "s/0x0\n(.*)/\1/"
+echo "$TEMP" | perl -pe "s/.*?\n(.*)/\1/"
+echo "$TEMP" | perl -pe "s/0x0\n (.*)/\1/"
+echo "$TEMP" | perl -pe "s/0x0\n(.*)/\1/"
+echo "$TEMP" | perl -pe "s/0x0\n(.*)/\1/" | od -c
+echo "$TEMP" | perl -pe "s/0x0\n(.*)/\1/" | od -x
+echo "$TEMP" | perl -pe "s/0x0\n([0-9]*)/\1/" | od -x
+echo "$TEMP" | perl -pe "s/0x0\n([0-9]*)/\1/" | od -c
+echo "$TEMP" | perl -pe "s/([0-9]*)/\1/" | od -c
+echo "$TEMP" | perl -pe "s/.*\n([0-9]*)/\1/" | od -c
+echo "$TEMP" | perl -pe "s/.*([0-9]*)/\1/" | od -c
+echo "$TEMP" | perl -pe "s/.*\n([0-9]*)/\1/" | od -c
+echo "$TEMP" | perl -pe "s/([0-9]*)/\1/" | od -c
+echo "$TEMP" | perl -pe "s/([0-9]*)/\1/" | od -cx
+echo "$TEMP" | perl -pe "s/.*?\n([0-9]*)/\1/" | od -cx
+echo "$TEMP" | perl -pe "s/.*? ([0-9]*)/\1/" | od -cx
+echo "$TEMP" | perl -pe "s/.* ([0-9]*)/\1/" | od -cx
+echo "$TEMP" | perl -pe "s/([0-9]*)/\1/" | od -cx
+echo "$TEMP" | cut -b 4- | od -cx
+echo "$TEMP" | cut -b 5 | od -cx
+echo "$TEMP" | cut -b 3- | od -cx
+echo "$TEMP" | cut -b 4- | od -cx
+man cut
+echo "$TEMP" | strings | od -cx
+echo "$TEMP" | strings
+echo "$TEMP" | strings | perl -pe "s/([0-9]*)/\1/" | od -cx
+echo "$TEMP" | strings | perl -pe "s/([0-9]*)\./\1/" | od -cx
+echo "$TEMP" | strings | perl -pe "s/([0-9]*?)\./\1/" | od -cx
+echo "$TEMP" | strings | perl -pe "s/([0-9]*?)\./\1/"
+echo "$TEMP" | strings | perl -pe "s/([0-9]*?)\\./\1/"
+echo "$TEMP" | strings | perl -pe "s/([0-9]*?)\..*/\1/"
+elforbrukning_day.sh
+ls
+cd removespikes/
+ls
+more count_elforbrukning_12.xml
+ls
+more README
+more removespikes.pl 
+history | grep -C 10 spikes
+history | grep -C 30 spikes
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd
+man grep
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "\+0[2345]"
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "\+0[23456789]"
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "\+0[23456789]" | sort
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "entry|\+0[23456789]" 
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | more
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep pdp_per_row
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -C 10 pdp_per_row
+rrdtool info /var/www/cacti/rra/count_elforbrukning_12.rrd 
+more removespikes.pl 
+ls
+cp /var/www/cacti/rra/count_elforbrukning_12.rrd .
+ls -ltr
+ls -la /var/www/cacti/rra/count_elforbrukning_12.rrd 
+ls -la /var/www/cacti/rra/count_elforbrukning_12*
+date
+ls -la /var/www/cacti/rra/count_elforbrukning_12*
+date
+./removespikes.pl /var/www/cacti/rra/count_elforbrukning_12.rrd 
+ls -la /var/www/cacti/rra/count_elforbrukning_12*
+more removespikes.pl 
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "entry|\+0[23456789]" 
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | more
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "entry|\+0[23456789]" 
+touch removespikes.sh
+chmod 755 removespikes.sh
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd > ./count_elforbrukning_12.xml
+ls -ltr
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "\+0[23456789]"
+cat count_elforbrukning_12.xml | grep -E "\+0[23456789]"
+sed -i "s/\+0[23456789]/\-01/" count_elforbrukning_12.xml
+cat count_elforbrukning_12.xml | grep -E "\+0[23456789]"
+cat count_elforbrukning_12.xml | grep -E "-01"
+cat count_elforbrukning_12.xml | grep -E "\-01"
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd > ./count_elforbrukning_12.xml
+cat count_elforbrukning_12.xml | grep -E "\+0[23456789]"
+sed -i "s/\+0[23456789]/\+00/" count_elforbrukning_12.xml
+sed -i "s/\+0[3456789]/\+00/" count_elforbrukning_12.xml
+rrdtool restore ./count_elforbrukning_12.xml /var/www/cacti/rra/count_elforbrukning_12.rrd
+mv /var/www/cacti/rra/count_elforbrukning_12.rrd /var/www/cacti/rra/count_elforbrukning_12.rrd.bak3
+sudo /var/www/cacti/rra/count_elforbrukning_12.rrd /var/www/cacti/rra/count_elforbrukning_12.rrd.bak3
+sudo mv /var/www/cacti/rra/count_elforbrukning_12.rrd /var/www/cacti/rra/count_elforbrukning_12.rrd.bak3
+rrdtool restore ./count_elforbrukning_12.xml /var/www/cacti/rra/count_elforbrukning_12.rrd
+sudo rrdtool restore ./count_elforbrukning_12.xml /var/www/cacti/rra/count_elforbrukning_12.rrd
+ls -la /var/www/cacti/rra/count_elforbrukning_12*
+sudo chown www-data:www-data /var/www/cacti/rra/*
+ls -la /var/www/cacti/rra/count_elforbrukning_12*
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "\+0[23456789]"
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "\+1[0123456789]"
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "\+1"
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "\+02"
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -E "\+03"
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | more
+elforbrukning_day.sh
+./removespikes.pl /var/www/cacti/rra/count_elforbrukning_12.rrd 
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -O "<v>.*</v>"
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -o "<v>.*</v>"
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -o "<v>.*</v>" | sort | more
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -o "<v>.*</v>" | sort 
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -o "<v>.*</v>" | grep e+
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd | grep -o "<v>.*</v>" | grep e+ | sort
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd > ./count_elforbrukning_12.xml
+cat count_elforbrukning_12.xml | grep -E "\+0[23456789]"
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.bak2 > ./count_elforbrukning_12.xml
+ls -la /var/www/cacti/rra/count_elforbrukning_12*
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd.bak3 > ./count_elforbrukning_12.xml
+cat count_elforbrukning_12.xml | grep -E "\+0[23456789]"
+sed -i "s/\+0[3456789]/\-01/" count_elforbrukning_12.xml
+sudo rm /var/www/cacti/rra/count_elforbrukning_12.rrd
+sudo rrdtool restore ./count_elforbrukning_12.xml /var/www/cacti/rra/count_elforbrukning_12.rrd
+sudo chown www-data:www-data /var/www/cacti/rra/*
+cd 
+cd bin
+mv elforbrukning_day.sh elforbrukning_days.sh
+cp elforbrukning_days.sh elforbrukning_hours.sh
+cp elforbrukning_days.sh elforbrukning_weeks.sh
+cp elforbrukning_days.sh elforbrukning_months.sh
+elforbrukning_days.sh
+elforbrukning_hours.sh
+ls
+cd bin
+ls
+elforbrukning_hours.sh
+cd /var/www/
+ls
+emacs jqplot.html
+unset DISPLAY
+emacs jqplot.html
+cp jqplot.html jqplot2.html
+sudo cp jqplot.html jqplot2.html
+ls -la
+ls -ltr
+sudo chmod 777 jqplot2.html
+emacs jqplot2.html
+cd /var/www/
+emacs jqplot2.html
+sudo cp jqplot.html jqplot3.html
+sudo chmod 777 jqplot3.html
+emacs jqplot3.html
+bg
+sudo touch jsondata.txt
+sudo chmod 777 jsondata.txt
+emacs jsondata.txt 
+emacs /home/pi/bin/elforbrukning_hours.sh
+bg
+elforbrukning_hours.sh
+more jsondata.txt 
+elforbrukning_hours.sh
+emacs  jsondata.txt 
+ls -la
+mv jqplot3.html elforbrukning.html
+sudo mv jqplot3.html elforbrukning.html
+mytools-add.sh elforbrukning.html 
+mytools-checklinks.sh 
+ls -ltr ~/bin
+mytools-add.sh ~/bin/elforbrukning_hours.sh
+mytools-add.sh ~/bin/elforbrukning_days.sh 
+mytools-add.sh ~/bin/elforbrukning_weeks.sh 
+mytools-add.sh ~/bin/elforbrukning_months.sh 
+mytools-checklinks.sh 
+cd
+cd removespikes/
+ls
+mv removespikes.sh removespikes.README
+mytools-add.sh removespikes.README 
+mytools-checklinks.sh 
+cd 
+cd mytools/

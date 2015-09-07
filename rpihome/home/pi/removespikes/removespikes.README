@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+rrdtool dump /var/www/cacti/rra/count_elforbrukning_12.rrd > ./count_elforbrukning_12.xml
+
+sed -i "s/\+0[23456789]/\-01/" count_elforbrukning_12.xml
+
+rrdtool restore ./count_elforbrukning_12.xml /var/www/cacti/rra/count_elforbrukning_12.rrd
