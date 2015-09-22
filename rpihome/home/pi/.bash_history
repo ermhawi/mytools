@@ -1953,3 +1953,24 @@ emacs mytools-add.sh
 bg
 emacs mytools-checklinks.sh &
 git status 
+git add .
+git status 
+git commit -m "update of mytools"
+git push
+git status 
+mytools-checklinks.sh 
+mytools-add.sh /var/www/elforbrukning.html
+rm /home/pi/mytools/rpihome/var/www/elforbrukning.html
+mytools-add.sh /var/www/elforbrukning.html
+mytools-checklinks.sh 
+mytools-add.sh /var/www/elforbrukning.html
+diff -q /var/www/elforbrukning.html /home/pi/mytools/rpihome/var/www/elforbrukning.html
+echo $?
+diff /var/www/elforbrukning.html /home/pi/mytools/rpihome/var/www/elforbrukning.html
+emacs /home/pi/mytools/rpihome/var/www/elforbrukning.html
+mytools-checklinks.sh 
+diff -q /var/www/elforbrukning.html /home/pi/mytools/rpihome/var/www/elforbrukning.html
+mytools-checklinks.sh 
+cp /var/www/elforbrukning.html /home/pi/mytools/rpihome/var/www/elforbrukning.html
+mytools-checklinks.sh 
+git status 
