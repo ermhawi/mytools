@@ -4,23 +4,30 @@
 
 FILE=/var/www/cacti/rra/count_elforbrukning_12.rrd
 
+TIME=$(date +%s)
+RRDRES=3600
+ADJUSTED=@$(($TIME/$RRDRES*$RRDRES))
 
-CURRDATE=`LC_TIME=C date`
+CURRDATE=`LC_TIME=C date -d $ADJUSTED`
 
-RESULT="[["
-for i in {23..0}
+VALUES="\"values\":["
+LABELS="\"labels\":["
+for i in {23..1}
 do
-	TSTART=`LC_TIME=C date -d "$CURRDATE -$(($i+1)) hour"`
+	TSTART=`LC_TIME=C date -d "$CURRDATE -$i hour"`
 	START=`date -d "$TSTART" +%s`
-	TSTOP=`LC_TIME=C date -d "$CURRDATE -$i hour"`
+	TSTOP=`LC_TIME=C date -d "$CURRDATE -$(($i-1)) hour"`
 	STOP=`date -d "$TSTOP" "+%s"`
 	CMD="rrdtool graph foo DEF:hit=$FILE:count_elforbrukning:AVERAGE VDEF:vtotal=hit,TOTAL PRINT:vtotal:%lf -s $START -e $STOP"
 	TEMP=`$CMD`
 	VALUE=`echo "$TEMP" | strings | perl -pe "s/([0-9]*?)\..*/\1/"`
 #	echo "[$TSTART] [$START] [$TSTOP] [$STOP] [$CMD] [$VALUE]"
-	RESULT="$RESULT$VALUE, "
+	LABEL=`LC_TIME=C date -d "$CURRDATE -$(($i-1)) hour" "+%H:%M"`
+	LABELS="$LABELS\"$LABEL\", "
+	VALUES="$VALUES$VALUE, "
 done
 
-RESULT="${RESULT%, }]]"
+VALUES="${VALUES%, }]"
+LABELS="${LABELS%, }]"
 
-echo $RESULT
+echo "{$LABELS,$VALUES}"

@@ -1880,3 +1880,76 @@ mytools-add.sh removespikes.README
 mytools-checklinks.sh 
 cd 
 cd mytools/
+git add .
+git status 
+git commit -m "update of mytools"
+git push
+git pull
+git push
+cd /var/www/
+emacs elforbrukning.html 
+date "+%Y%m%d_%H%M%S"
+elforbrukning_hours.sh
+elforbrukning_hours.sh | python -m json.tool
+sudo apt-get install jq 
+hostname --fqd
+sudo bash
+sudo apt-get update 
+date 
+date -d 'Thu Sep  3 16:11:30 CEST 2015  -7 day' | tr "\n" " " | od -c
+date -d 'Thu Sep  3 16:11:30 CEST 2015  -7 day'
+sate -%s
+date -%s
+date +%s
+date -d '1441888903'
+date -r 1441888903
+date -d '@1441888903'
+elforbrukning_hours.sh | python -m json.tool
+date -d '1970-01-01 UTC + 1234567890 s'
+date
+LC_TIME=C date
+LC_TIME=C date @0
+LC_TIME=C date -d @0
+date +%s
+date -d 'Thu Jan  1 01:00:00 CET 1970 + 1441889260 s'
+TIME=$(date +%s)
+RRDRES=3600
+ADJUSTED=$(($TIME/$RRDRES*$RRDRES))
+CURRDATE=`LC_TIME=C date -d '@{$ADJUSTED}'`
+CURRDATE=`LC_TIME=C date -d '@${ADJUSTED}'`
+CURRDATE=`LC_TIME=C date -d '@$ADJUSTED'`
+CURRDATE=`LC_TIME=C date -d '@\$ADJUSTED'`
+CURRDATE=`LC_TIME=C date -d '\@$ADJUSTED'`
+echo "@$ADJUSTED"
+ADJUSTED=@$(($TIME/$RRDRES*$RRDRES))
+echo $ADJUSTED 
+elforbrukning_hours.sh | python -m json.tool
+TIME=$(date +%s)
+RRDRES=3600
+ADJUSTED=@$(($TIME/$RRDRES*$RRDRES))
+CURRDATE=`LC_TIME=C date -d '$ADJUSTED'`
+CURRDATE=`LC_TIME=C date -d $ADJUSTED`
+elforbrukning_hours.sh | python -m json.tool
+elforbrukning_hours.sh 
+cp elforbrukning_hours.sh elforbrukning_days.sh 
+RRDRES=3600*24
+echo $RRDRES 
+RRDRES=$(3600*24)
+RRDRES=$((3600*24))
+echo $RRDRES 
+elforbrukning_day.sh 
+elforbrukning_days.sh 
+man date
+elforbrukning_days.sh 
+ls
+cp elforbrukning_days.sh elforbrukning_weeks.sh 
+elforbrukning_weeks.sh 
+man date
+elforbrukning_weeks.sh 
+bash
+cd mytools/
+ls
+emacs mytools-add.sh
+bg
+emacs mytools-checklinks.sh &
+git status 

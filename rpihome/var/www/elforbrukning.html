@@ -1,40 +1,128 @@
 <html>
   <body>
-    <h1>jqplot test</h1>
+    <h1>test</h1>
 
     <script language="javascript" type="text/javascript" src="public/jqplot/jquery.min.js"></script>
     <script language="javascript" type="text/javascript" src="public/jqplot/jquery.jqplot.min.js"></script>
     <script language="javascript" type="text/javascript" src="public/jqplot/plugins/jqplot.barRenderer.min.js"></script>
     <script language="javascript" type="text/javascript" src="public/jqplot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+    <script language="javascript" type="text/javascript" src="public/jqplot/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+    <script language="javascript" type="text/javascript" src="public/jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
     <link rel="stylesheet" type="text/css" href="public/jqplot/jquery.jqplot.css" />
     
-    <div id="chart1" style="height:400px;width:400px; "></div>
+    <div id="chart-hours" style="height:400px;width:1000px; "></div>
+	<br/>
+    <div id="chart-days" style="height:400px;width:1000px; "></div>
+	<br/>
+    <div id="chart-weeks" style="height:400px;width:1000px; "></div>
 
     <script>
 $(document).ready(function(){
-    
-    var ajaxDataRenderer = function(url, plot) {
-        var ret = null;
-        $.ajax({
-            // have to use synchronous here, else returns before data is fetched
-            async: false,
-            url: url,
-            dataType:'json',
-            success: function(data) {
-                ret = $.parseJSON(data['elforbrukning_hours']);
-            }
-        });
-        return ret;
-    };
- 
-    var jsonurl = "http://rpihome.ermhawi.com:4730/script/elforbrukning_hours";
-//    jsonurl = "jsondata.txt";
+	var ajaxDataRenderer = function(url, plot) {
+		var ret = null;
+		$.ajax({
+			// have to use synchronous here, else returns before data is fetched
+			async: false,
+			url: url,
+			dataType:'json',
+			success: function(data) {
+				var controller = url.substr(url.lastIndexOf('/') + 1);
+				var result = $.parseJSON(data[controller]);
+				plot.axes.xaxis.ticks = result['labels'];
+				ret = [result['values']];
+			}
+		});
+		return ret;
+	};
 
-    plo12 = $.jqplot('chart1', jsonurl,{
-        title: 'AJAX JSON Data Renderer',
+	var ticks = [];
+    var jsonurl = "http://rpihome.ermhawi.com:4730/script/elforbrukning_hours";
+    var plot1 = $.jqplot('chart-hours', jsonurl,{
+        title: 'Per hour',
+            // Only animate if we're not using excanvas (not in IE 7 or IE 8)..
+//            animate: !$.jqplot.use_excanvas,
+            seriesDefaults:{
+                renderer:$.jqplot.BarRenderer,		
+				rendererOptions: {
+					barMargin: 6,
+					barPadding: 2,
+					shadow: false
+					}
+            },
+            axes: {
+                xaxis: {
+                    renderer: $.jqplot.CategoryAxisRenderer,
+					ticks: ticks,
+					tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+					tickOptions: {
+						angle: -45,
+						fontSize: '8pt'
+					}
+				}
+            },
         dataRenderer: ajaxDataRenderer
     });
+	
+	
+	jsonurl = "http://rpihome.ermhawi.com:4730/script/elforbrukning_days";
+    var plot2 = $.jqplot('chart-days', jsonurl,{
+        title: 'Per day',
+            // Only animate if we're not using excanvas (not in IE 7 or IE 8)..
+//            animate: !$.jqplot.use_excanvas,
+            seriesDefaults:{
+                renderer:$.jqplot.BarRenderer,		
+				rendererOptions: {
+					barMargin: 6,
+					barPadding: 2,
+					shadow: false
+					}
+            },
+            axes: {
+                xaxis: {
+                    renderer: $.jqplot.CategoryAxisRenderer,
+					ticks: ticks,
+					tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+					tickOptions: {
+						angle: -45,
+						fontSize: '8pt'
+					}
+				}
+            },
+        dataRenderer: ajaxDataRenderer
+    });
+
+	
+	jsonurl = "http://rpihome.ermhawi.com:4730/script/elforbrukning_weeks";
+    var plot3 = $.jqplot('chart-weeks', jsonurl,{
+        title: 'Per week',
+            // Only animate if we're not using excanvas (not in IE 7 or IE 8)..
+//            animate: !$.jqplot.use_excanvas,
+            seriesDefaults:{
+                renderer:$.jqplot.BarRenderer,		
+				rendererOptions: {
+					barMargin: 6,
+					barPadding: 2,
+					shadow: false
+					}
+            },
+            axes: {
+                xaxis: {
+                    renderer: $.jqplot.CategoryAxisRenderer,
+					ticks: ticks,
+					tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+					tickOptions: {
+						angle: -45,
+						fontSize: '8pt'
+					}
+				}
+            },
+        dataRenderer: ajaxDataRenderer
+    });
+
+
 });
+
+
     </script>
 
   </body>
