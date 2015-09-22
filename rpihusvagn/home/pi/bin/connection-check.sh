@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TIME=`date "+%Y-%m-%d %H:%M:%S"`
-wget -q --tries=15 --timeout=60 --spider http://rpihusvagn.ermhawi.com
+wget -q --tries=5 --timeout=30 --spider http://rpihusvagn.ermhawi.com
 if [[ $? -eq 0 ]]; then
     if [[ `date "+%H"` -eq 0 ]]; then
 	echo " " >> /var/www/connection.log
