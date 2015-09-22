@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# ip-up script that sends sms
+
+# # These variables are for the use of the scripts run by run-parts
+# PPP_IFACE="$1"
+# PPP_TTY="$2"
+# PPP_SPEED="$3"
+# PPP_LOCAL="$4"
+# PPP_REMOTE="$5"
+# PPP_IPPARAM="$6"
+
+ifconfig ppp0 | grep -oE "inet addr:[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ " | sudo gammu sendsms TEXT 0722328809
+
+

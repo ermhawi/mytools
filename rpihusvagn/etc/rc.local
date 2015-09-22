@@ -23,4 +23,6 @@ fi
 
 /home/pi/umtskeeper/a.sh
 
+gammu-smsd -d
+
 exit 0
